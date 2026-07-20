@@ -18,12 +18,18 @@ patterns behind customer churn using MySQL.
 
 ## Key Insights
 
-*(akan diisi setelah query dijalankan)*
+- Germany has the highest churn rate (32.44%) — nearly double that of Spain (16.67%) and France (16.15%), despite Germany and Spain having a similar customer base size. This signals a market-specific issue worth investigating.
 
-- Insight 1: ...
-- Insight 2: ...
-- Insight 3: ...
+- Inactive members churn almost 2x more than active members (26.85% vs 14.27%), making member engagement one of the strongest churn predictors in this dataset.
 
+- Credit score is NOT a strong differentiator — churned customers (645.35 avg) and retained customers (651.85 avg) have nearly identical credit scores, challenging the common assumption that lower credit customers are more likely to leave.
+
+- Number of bank products shows a non-linear pattern: customers with 2 products are the most loyal (7.58% churn), while customers with 3+ products show extremely high churn (82.71% and 100%), though these segments have small sample sizes (266 and 60 customers respectively) and warrant further investigation.
+
+- The 46-60 age group has the highest churn rate (51.12%), far above other age groups. Customers under 30 are the most loyal (7.56% churn).
+
+- Credit card ownership has virtually no impact on churn (20.81% vs 20.18%), contrary to common assumptions about credit card holders being more "locked in."
+  
 ## Queries
 
-Semua query ada di file `queries.sql`
+All queries is in file `queries.sql'
